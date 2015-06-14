@@ -11,7 +11,7 @@ USE eventhut;
 # User table
 CREATE TABLE Users (
 	user_id			INT(9) NOT NULL auto_increment PRIMARY KEY,
-	username		VARCHAR(25) NOT NULL,
+	username		VARCHAR(25) NOT NULL UNIQUE,
 	password		VARCHAR(25) NOT NULL,
 	fName			VARCHAR(20) NOT NULL,
 	lName			VARCHAR(20) NOT NULL,	

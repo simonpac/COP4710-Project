@@ -12,6 +12,12 @@
 <?php if (!isset($_SESSION['user_id'])): ?>
 	<h1>Sign In to Eventhut</h1>
 	<form action="../Scripts/authenticate_user.php" method="post">
+		First Name:<br>
+		<input type="text" name="fName">
+		<br>
+		Last Name:<br>
+		<input type="text" name="lName">
+		<br>
 		Username:<br>
 		<input type="text" name="username">
 		<br>
